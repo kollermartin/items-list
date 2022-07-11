@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let item of items | async">
+        <span>{{item.id}}</span>
+        <span>{{item.name}}</span>
+        <button (click)="openModal()">edit</button>
+    </li>
+</ul>
