@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngxs/store';
 import { GenerateId } from 'src/app/tools/generate-id';
 import { AddItem } from '../actions/items.action';
@@ -15,7 +15,7 @@ export class AddItemComponent implements OnInit {
     name: ['', Validators.required]
   })
 
-  constructor(private formBuilder: FormBuilder, private store: Store) { }
+  constructor(private formBuilder: UntypedFormBuilder, private store: Store) { }
 
   ngOnInit(): void {
   }

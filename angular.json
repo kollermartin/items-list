@@ -119,6 +119,5 @@
     "@schematics/angular:component": {
       "styleext": "scss"
     }
-  },
-  "defaultProject": "item-list"
+  }
 }
