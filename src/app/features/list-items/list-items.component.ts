@@ -3,7 +3,7 @@ import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { Item } from 'src/app/models/item';
 import { ItemsState } from 'src/app/state/items.state';
-import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { ItemDetailComponent } from '../item-detail/item-detail.component';
 
 @Component({
@@ -20,7 +20,9 @@ export class ListItemsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public openModal(): void {
-    this.dialog.open(ItemDetailComponent);
+  public openModal(id: string): void {
+    this.dialog.open(ItemDetailComponent, {
+      data: id
+    });
   }
 }

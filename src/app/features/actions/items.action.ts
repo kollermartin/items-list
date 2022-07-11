@@ -5,3 +5,9 @@ export class AddItem {
 
     constructor(public payload: Item){}
 }
+
+export class EditItem {
+    static readonly type = '[Items] Edit Item'
+
+    constructor(public payload: Item){}
+}

@@ -9,6 +9,8 @@ import { NgxsModule } from '@ngxs/store';
 import { ItemsState } from './state/items.state';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemDetailComponent } from './features/item-detail/item-detail.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ItemDetailComponent } from './features/item-detail/item-detail.componen
     BrowserModule,
     ReactiveFormsModule,
     NgxsModule.forRoot([ItemsState]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

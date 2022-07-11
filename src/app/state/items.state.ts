@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Item } from "../models/item";
-import { Action, Select, Selector, State, StateContext } from '@ngxs/store';
-import { AddItem } from "../features/actions/items.action";
+import { Action, createSelector, Select, Selector, State, StateContext } from '@ngxs/store';
+import { AddItem, EditItem } from "../features/actions/items.action";
 
 export interface ItemsStateModel {
     items: Item[];
@@ -22,6 +22,12 @@ export class ItemsState {
         return state.items;
     }
 
+    static getItem(id: string) {
+       return createSelector([ItemsState], (state: ItemsStateModel) => {
+        return state.items.find(item => item.id === id);
+       })
+    }
+
     @Action(AddItem)
     addItem(ctx: StateContext<ItemsStateModel>, {payload}: AddItem){
         const state = ctx.getState();
@@ -29,6 +35,20 @@ export class ItemsState {
         ctx.patchState({
             items: [...state.items, payload]
         });
+    }
+
+    @Action(EditItem)
+    editItem(ctx: StateContext<ItemsStateModel>, {payload}: EditItem) {
+        const state = ctx.getState();
+        const editedItem = state.items.find(item => item.id === payload.id);
+        const indexOfEditedItem = state.items.indexOf(editedItem);
+        const newItems = [...state.items];
+        
+        newItems[indexOfEditedItem] = {...payload};
+
+        ctx.patchState({
+            items: newItems
+        })
     }
 
 
