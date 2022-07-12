@@ -10,7 +10,7 @@ import { EditItem } from '../actions/items.action';
 @Component({
   selector: 'app-item-detail',
   templateUrl: './item-detail.component.html',
-  styleUrls: ['./item-detail.component.css'],
+  styleUrls: ['./item-detail.component.scss'],
 })
 export class ItemDetailComponent implements OnInit {
   public itemFormGroup = this.fb.group({

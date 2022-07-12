@@ -22,7 +22,8 @@ export class ListItemsComponent implements OnInit {
 
   public openModal(id: string): void {
     this.dialog.open(ItemDetailComponent, {
-      data: id
+      data: id,
+      width: '25vw'
     });
   }
 }

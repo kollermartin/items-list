@@ -1,7 +1,6 @@
 <ul>
-    <li *ngFor="let item of items | async">
-        <span>{{item.id}}</span>
-        <span>{{item.name}}</span>
-        <button (click)="openModal(item.id)">edit</button>
+    <li class="item" *ngFor="let item of items | async">
+        <span class="item__name">{{item.name}}</span>
+        <button mat-stroked-button class="item__action" color="primary" (click)="openModal(item.id)">edit</button>
     </li>
 </ul>
