@@ -1,0 +1,26 @@
+
+.item {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    line-break: anywhere;
+    margin: .3rem 0;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+
+    &__name {
+        flex: 70%;
+        margin-right: 2rem;
+        place-self: center;
+    }
+
+    &__action {
+        flex: 30%;
+        place-self: center;
+
+        & > * {
+            margin-right: .5rem;
+        }
+    }
+}

@@ -11,3 +11,15 @@ export class EditItem {
 
     constructor(public payload: Item){}
 }
+
+export class GetItems {
+    static readonly type = '[Items] Get Items'
+
+    constructor() {}
+}
+
+export class RemoveItem {
+    static readonly type = '[Items] Remove Item'
+
+    constructor(public payload: Item){}
+}

@@ -31,7 +31,7 @@ export class ItemDetailComponent implements OnInit {
   }
 
   public submit(): void {
-    this.store.dispatch(new EditItem(new Item(this.itemFormGroup.controls['name'].value, this.itemFormGroup.controls['id'].value)))
+    this.store.dispatch(new EditItem({name: this.itemFormGroup.controls['name'].value,id: this.itemFormGroup.controls['id'].value}))
     this.dialogRef.close();
   }
 

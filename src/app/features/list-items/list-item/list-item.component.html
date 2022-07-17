@@ -1,0 +1,7 @@
+<div class="item">
+    <span class="item__name">{{item.name}}</span>
+    <div class="item__action">
+        <button mat-stroked-button  color="primary" (click)="openModal(item.id)"><mat-icon>edit</mat-icon></button>
+        <button mat-flat-button  color="primary" (click)="removeItem()"><mat-icon>delete</mat-icon></button>
+    </div>
+</div>

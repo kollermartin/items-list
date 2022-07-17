@@ -1,10 +1,10 @@
-<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+<form [formGroup]="formGroup">
     <mat-form-field appearance="fill">
         <mat-label>Item</mat-label>
         <input type="text" matInput [formControl]="formGroup.controls['name']">
-        <mat-error *ngIf="formGroup.controls['name'].hasError('required')">
+        <mat-error *ngIf="formGroup.controls['name'].hasError('required')"> 
           Item name is <strong>required</strong>
         </mat-error>
       </mat-form-field>
-    <button type="submit" mat-raised-button color="primary" [disabled]="!formGroup.valid">Add</button>
+    <button type="button" mat-raised-button color="primary" (click)="onSubmit()" [disabled]="!formGroup.valid">Add</button>
 </form>
