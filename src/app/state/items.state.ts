@@ -34,9 +34,14 @@ export class ItemsState {
 
     @Action(GetItems)
     getItems(ctx: StateContext<ItemsStateModel>) {
-        return this.itemsService.getItems().pipe(map(item => {
-            return (Object.values(item));
-         }), tap(items => ctx.patchState({items: items})))
+        this.itemsService.getItems().then((snapshot) => {
+            if (snapshot.exists()) {
+                ctx.patchState({items: Object.values(snapshot.val())});
+            } else {
+              console.log("No data available");
+            }
+          });
+        
     }
 
     @Action(AddItem)
@@ -62,10 +67,14 @@ export class ItemsState {
         ctx.patchState({
             items: newItems
         })
+
+        this.itemsService.updateItem(payload); //TODO predelat patchstate do then();
     }
 
     @Action (RemoveItem)
     removeItem(ctx: StateContext<ItemsStateModel>, {payload}: RemoveItem) {
+        this.itemsService.removeItem(payload.id);
+
         ctx.patchState({
             items: ctx.getState().items.filter(item => item.id !== payload.id)
         })
