@@ -42,24 +42,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _features_list_items_list_items_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./features/list-items/list-items.component */ 4125);
 /* harmony import */ var _features_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./features/add-item/add-item.component */ 4171);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ 2508);
 /* harmony import */ var _ngxs_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ngxs/store */ 5508);
 /* harmony import */ var _state_items_state__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./state/items.state */ 556);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser/animations */ 7146);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ 7146);
 /* harmony import */ var _features_item_detail_item_detail_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./features/item-detail/item-detail.component */ 7339);
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/dialog */ 1484);
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/button */ 4522);
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/input */ 8562);
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/dialog */ 1484);
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/button */ 4522);
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/input */ 8562);
 /* harmony import */ var _features_list_items_list_item_list_item_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./features/list-items/list-item/list-item.component */ 6030);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/common/http */ 8987);
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/icon */ 7822);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/common/http */ 8987);
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/icon */ 7822);
 /* harmony import */ var _shared_snack_bar_snack_bar_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./shared/snack-bar/snack-bar.component */ 5989);
-/* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/snack-bar */ 930);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/snack-bar */ 930);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../environments/environment */ 2340);
+/* harmony import */ var _angular_fire_compat__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/fire/compat */ 1879);
+/* harmony import */ var _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/fire/compat/auth */ 5873);
+/* harmony import */ var _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/fire/compat/storage */ 5574);
+/* harmony import */ var _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/fire/compat/firestore */ 2393);
+/* harmony import */ var _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/fire/compat/database */ 2575);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+
+
+
+
+
 
 
 
@@ -82,30 +95,38 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
 }
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
-AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent] });
-AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ providers: [_angular_forms__WEBPACK_IMPORTED_MODULE_9__.FormGroupDirective], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__.BrowserModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_9__.ReactiveFormsModule,
+AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent] });
+AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ providers: [_angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormGroupDirective], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_10__.ReactiveFormsModule,
         _ngxs_store__WEBPACK_IMPORTED_MODULE_3__.NgxsModule.forRoot([_state_items_state__WEBPACK_IMPORTED_MODULE_4__.ItemsState]),
-        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__.BrowserAnimationsModule,
-        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_12__.MatDialogModule,
-        _angular_material_button__WEBPACK_IMPORTED_MODULE_13__.MatButtonModule,
-        _angular_material_input__WEBPACK_IMPORTED_MODULE_14__.MatInputModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_15__.HttpClientModule,
-        _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__.MatIconModule,
-        _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_17__.MatSnackBarModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent,
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule,
+        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_13__.MatDialogModule,
+        _angular_material_button__WEBPACK_IMPORTED_MODULE_14__.MatButtonModule,
+        _angular_material_input__WEBPACK_IMPORTED_MODULE_15__.MatInputModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_16__.HttpClientModule,
+        _angular_material_icon__WEBPACK_IMPORTED_MODULE_17__.MatIconModule,
+        _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_18__.MatSnackBarModule,
+        _angular_fire_compat__WEBPACK_IMPORTED_MODULE_19__.AngularFireModule.initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_8__.environment.firebaseConfig),
+        _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_20__.AngularFireAuthModule,
+        _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_21__.AngularFirestoreModule,
+        _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_22__.AngularFireStorageModule,
+        _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_23__.AngularFireDatabaseModule] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent,
         _features_list_items_list_items_component__WEBPACK_IMPORTED_MODULE_1__.ListItemsComponent,
         _features_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_2__.AddItemComponent,
         _features_item_detail_item_detail_component__WEBPACK_IMPORTED_MODULE_5__.ItemDetailComponent,
         _features_list_items_list_item_list_item_component__WEBPACK_IMPORTED_MODULE_6__.ListItemComponent,
-        _shared_snack_bar_snack_bar_component__WEBPACK_IMPORTED_MODULE_7__.SnackBarComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__.BrowserModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_9__.ReactiveFormsModule, _ngxs_store__WEBPACK_IMPORTED_MODULE_3__["ɵj"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__.BrowserAnimationsModule,
-        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_12__.MatDialogModule,
-        _angular_material_button__WEBPACK_IMPORTED_MODULE_13__.MatButtonModule,
-        _angular_material_input__WEBPACK_IMPORTED_MODULE_14__.MatInputModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_15__.HttpClientModule,
-        _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__.MatIconModule,
-        _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_17__.MatSnackBarModule] }); })();
+        _shared_snack_bar_snack_bar_component__WEBPACK_IMPORTED_MODULE_7__.SnackBarComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_10__.ReactiveFormsModule, _ngxs_store__WEBPACK_IMPORTED_MODULE_3__["ɵj"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule,
+        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_13__.MatDialogModule,
+        _angular_material_button__WEBPACK_IMPORTED_MODULE_14__.MatButtonModule,
+        _angular_material_input__WEBPACK_IMPORTED_MODULE_15__.MatInputModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_16__.HttpClientModule,
+        _angular_material_icon__WEBPACK_IMPORTED_MODULE_17__.MatIconModule,
+        _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_18__.MatSnackBarModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_19__.AngularFireModule, _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_20__.AngularFireAuthModule,
+        _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_21__.AngularFirestoreModule,
+        _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_22__.AngularFireStorageModule,
+        _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_23__.AngularFireDatabaseModule] }); })();
 
 
 /***/ }),
@@ -457,6 +478,7 @@ class ListItemsComponent {
 
   ngOnInit() {
     this.loadItems();
+    this.itemsService.itemss();
   }
 
   loadItems() {
@@ -506,24 +528,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ItemsService": () => (/* binding */ ItemsService)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ 8987);
+/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/database */ 9187);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ 8987);
+/* harmony import */ var _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/compat/firestore */ 2393);
+
+
 
 
 class ItemsService {
-    constructor(http) {
+    constructor(http, db) {
         this.http = http;
-        this.dbPath = 'https://items-list-8957c-default-rtdb.europe-west1.firebasedatabase.app/items.json';
+        this.db = db;
+        this.dbPath = 'todos/';
     }
     getItems() {
-        return this.http.get(this.dbPath);
+        let data;
+        return (0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.get)((0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.ref)((0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.getDatabase)(), 'todos'));
+    }
+    itemss() {
+        (0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.get)((0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.ref)((0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.getDatabase)(), 'todos')).then((snapshot) => {
+            if (snapshot.exists()) {
+                return Object.values(snapshot.val());
+            }
+            else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
     }
     postItem(item) {
-        this.http.post(this.dbPath, item).subscribe(res => console.log(res));
+        const db = (0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.getDatabase)();
+        (0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.set)((0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.ref)(db, this.dbPath + item.id), {
+            name: item.name,
+            id: item.id
+        });
+    }
+    removeItem(id) {
+        const db = (0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.getDatabase)();
+        (0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.remove)((0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.ref)(db, this.dbPath + id));
+    }
+    updateItem(item) {
+        (0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.update)((0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.ref)((0,firebase_database__WEBPACK_IMPORTED_MODULE_0__.getDatabase)(), this.dbPath + item.id), item);
     }
 }
-ItemsService.ɵfac = function ItemsService_Factory(t) { return new (t || ItemsService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpClient)); };
-ItemsService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ItemsService, factory: ItemsService.ɵfac, providedIn: 'root' });
+ItemsService.ɵfac = function ItemsService_Factory(t) { return new (t || ItemsService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_3__.AngularFirestore)); };
+ItemsService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: ItemsService, factory: ItemsService.ɵfac, providedIn: 'root' });
 
 
 /***/ }),
@@ -572,15 +623,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ItemsState": () => (/* binding */ ItemsState)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ 4929);
 /* harmony import */ var _ngxs_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ngxs/store */ 5508);
 /* harmony import */ var _features_actions_items_action__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../features/actions/items.action */ 5273);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ 6942);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ 8759);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2560);
 /* harmony import */ var _services_items_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/items.service */ 4878);
 var ItemsState_1;
-
 
 
 
@@ -599,9 +647,14 @@ let ItemsState = ItemsState_1 = class ItemsState {
         });
     }
     getItems(ctx) {
-        return this.itemsService.getItems().pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_3__.map)(item => {
-            return (Object.values(item));
-        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_4__.tap)(items => ctx.patchState({ items: items })));
+        this.itemsService.getItems().then((snapshot) => {
+            if (snapshot.exists()) {
+                ctx.patchState({ items: Object.values(snapshot.val()) });
+            }
+            else {
+                console.log("No data available");
+            }
+        });
     }
     addItem(ctx, { payload }) {
         const state = ctx.getState();
@@ -619,31 +672,33 @@ let ItemsState = ItemsState_1 = class ItemsState {
         ctx.patchState({
             items: newItems
         });
+        this.itemsService.updateItem(payload); //TODO predelat patchstate do then();
     }
     removeItem(ctx, { payload }) {
+        this.itemsService.removeItem(payload.id);
         ctx.patchState({
             items: ctx.getState().items.filter(item => item.id !== payload.id)
         });
     }
 };
-ItemsState.ɵfac = function ItemsState_Factory(t) { return new (t || ItemsState)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_services_items_service__WEBPACK_IMPORTED_MODULE_2__.ItemsService)); };
-ItemsState.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjectable"]({ token: ItemsState, factory: ItemsState.ɵfac });
-(0,tslib__WEBPACK_IMPORTED_MODULE_6__.__decorate)([
+ItemsState.ɵfac = function ItemsState_Factory(t) { return new (t || ItemsState)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_services_items_service__WEBPACK_IMPORTED_MODULE_2__.ItemsService)); };
+ItemsState.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({ token: ItemsState, factory: ItemsState.ɵfac });
+(0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
     (0,_ngxs_store__WEBPACK_IMPORTED_MODULE_0__.Action)(_features_actions_items_action__WEBPACK_IMPORTED_MODULE_1__.GetItems)
 ], ItemsState.prototype, "getItems", null);
-(0,tslib__WEBPACK_IMPORTED_MODULE_6__.__decorate)([
+(0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
     (0,_ngxs_store__WEBPACK_IMPORTED_MODULE_0__.Action)(_features_actions_items_action__WEBPACK_IMPORTED_MODULE_1__.AddItem)
 ], ItemsState.prototype, "addItem", null);
-(0,tslib__WEBPACK_IMPORTED_MODULE_6__.__decorate)([
+(0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
     (0,_ngxs_store__WEBPACK_IMPORTED_MODULE_0__.Action)(_features_actions_items_action__WEBPACK_IMPORTED_MODULE_1__.EditItem)
 ], ItemsState.prototype, "editItem", null);
-(0,tslib__WEBPACK_IMPORTED_MODULE_6__.__decorate)([
+(0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
     (0,_ngxs_store__WEBPACK_IMPORTED_MODULE_0__.Action)(_features_actions_items_action__WEBPACK_IMPORTED_MODULE_1__.RemoveItem)
 ], ItemsState.prototype, "removeItem", null);
-(0,tslib__WEBPACK_IMPORTED_MODULE_6__.__decorate)([
+(0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
     (0,_ngxs_store__WEBPACK_IMPORTED_MODULE_0__.Selector)()
 ], ItemsState, "getItems", null);
-ItemsState = ItemsState_1 = (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__decorate)([
+ItemsState = ItemsState_1 = (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
     (0,_ngxs_store__WEBPACK_IMPORTED_MODULE_0__.State)({
         name: 'items',
         defaults: {
@@ -688,20 +743,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "environment": () => (/* binding */ environment)
 /* harmony export */ });
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
 const environment = {
-    production: false
+    production: false,
+    firebaseConfig: {
+        apiKey: "AIzaSyBsgH_tSHmfMaAl70hC3n7_5kSQtWztWjQ",
+        authDomain: "todo-list-4f92d.firebaseapp.com",
+        databaseURL: "https://todo-list-4f92d-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "todo-list-4f92d",
+        storageBucket: "todo-list-4f92d.appspot.com",
+        messagingSenderId: "196863795289",
+        appId: "1:196863795289:web:ed660bd982fd706821d148"
+    }
 };
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
 
 
 /***/ }),
