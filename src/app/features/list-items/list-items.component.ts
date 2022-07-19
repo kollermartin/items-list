@@ -23,6 +23,7 @@ export class ListItemsComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadItems();
+    this.itemsService.itemss();
   }
 
   private loadItems() {
