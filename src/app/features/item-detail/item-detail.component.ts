@@ -27,11 +27,11 @@ export class ItemDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.getItem();
-    this.itemFormGroup.controls['id'].disable();
+    this.itemFormGroup.get('id').disable();
   }
 
   public submit(): void {
-    this.store.dispatch(new EditItem({name: this.itemFormGroup.controls['name'].value,id: this.itemFormGroup.controls['id'].value}))
+    this.store.dispatch(new EditItem({name: this.itemFormGroup.get('name').value, id: this.itemFormGroup.get('id').value}));
     this.dialogRef.close();
   }
 
