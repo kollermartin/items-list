@@ -1,26 +1,33 @@
 
 .item {
-    width: 20vw;
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  line-break: anywhere;
+  margin: .3rem 0;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+
+  @media only screen and (max-width: 43.75rem) {
+    width: 25rem;
+  }
+
+  @media only screen and (max-width: 28.125rem) {
+    width: 80vw;
+  }
+
+  &__name {
+    margin-right: 2rem;
+  }
+
+  &__action {
     display: flex;
-    justify-content: space-between;
-    line-break: anywhere;
-    margin: .3rem 0;
-    padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #fff;
+    align-self: center;
+    justify-self: center;
 
-    &__name {
-        flex: 70%;
-        margin-right: 2rem;
-        place-self: center;
+    & > * {
+      margin-right: .5rem;
     }
-
-    &__action {
-        flex: 30%;
-        place-self: center;
-
-        & > * {
-            margin-right: .5rem;
-        }
-    }
+  }
 }

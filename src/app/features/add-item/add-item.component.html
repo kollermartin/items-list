@@ -1,8 +1,8 @@
 <form [formGroup]="formGroup">
     <mat-form-field appearance="fill">
-        <mat-label>Item</mat-label>
+        <mat-label>Item name</mat-label>
         <input type="text" matInput [formControl]="formGroup.controls['name']">
-        <mat-error *ngIf="formGroup.controls['name'].hasError('required')"> 
+        <mat-error *ngIf="formGroup.controls['name'].hasError('required')">
           Item name is <strong>required</strong>
         </mat-error>
       </mat-form-field>

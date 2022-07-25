@@ -23,12 +23,11 @@ export class ListItemComponent implements OnInit {
 
   public openModal(id: string): void {
     this.dialog.open(ItemDetailComponent, {
-      data: id,
-      width: '25vw'
+      data: id
     });
   }
 
   public removeItem(): void {
-    this.store.dispatch(new RemoveItem(this.item)).subscribe(() => this.snackBar.openFromComponent(SnackBarComponent, {data: 'Item removed!'}));
+    this.store.dispatch(new RemoveItem(this.item));
   }
 }

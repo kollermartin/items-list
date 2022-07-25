@@ -1,6 +1,21 @@
-form {
-    display: flex;
-    flex-direction: column;
+//form {
+//    display: flex;
+//    flex-direction: column;
+//}
+
+.mat-dialog-container {
+
+}
+
+.mat-dialog-content > form {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 16px;
+
+  @media only screen and (max-width: 43.75rem) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .actions {
