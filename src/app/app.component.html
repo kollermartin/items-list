@@ -1,4 +1,5 @@
 <div class="container">
   <app-add-item></app-add-item>
   <app-list-items></app-list-items>
+  <mat-spinner *ngIf="spinnerService._loading| async"></mat-spinner>
 </div>

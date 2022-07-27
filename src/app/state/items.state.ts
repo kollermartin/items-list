@@ -4,6 +4,7 @@ import {Action, createSelector, Select, Selector, State, StateContext, Store} fr
 import {AddItem, EditItem, GetItems, RemoveItem} from '../features/actions/items.action';
 import {ItemsService} from '../services/items.service';
 import {map, tap} from 'rxjs/operators';
+import { SpinnerService } from '../services/spinner.service';
 
 export interface ItemsStateModel {
   items: Item[];
@@ -40,6 +41,7 @@ export class ItemsState {
       } else {
         console.log('No data available');
       }
+
     });
 
   }
@@ -61,7 +63,7 @@ export class ItemsState {
     const newItems = [...state.items];
 
     newItems[indexOfEditedItem] = {...payload};
-
+    
     this.itemsService.updateItem(payload).then(() => ctx.patchState({items: newItems}));
   }
 
